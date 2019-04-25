@@ -1,35 +1,86 @@
 <!doctype html>
-	<html lang="de">
-		<head>
-			<title> Normannator </title>
-			<meta charset="utf-8">
-			<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-			<meta name="viewport" content="width=divice-width, initial-scale=1" />
-			
-			<style type="text/css">
-				<!--
-				@import "stylesheet.css";
-				-->
-			</style>
-		</head>
-		<body>
-		<div id="wartung">
-			<header>
-				<h2> Webseite im Bau </h2>
-			</header>
-			<br>
-			<h4> Diese Webseite befindet sich in der Entwicklung</h4>
-			<p>
-				Wir versuchen diese Webseite möglichst schnell fertig zu stellen.
-				Unten finden sie meine aktuelle Webseite.
-			</p>
-			<p>
-				Vielen Dank für Ihre Geduld!
-			</p>
-			<hr>
-			<footer>
-				<b>Meine aktuelle Webseite: </b><a href="https://normannator.bandcamp.com/" target=<sourceFenster> Bandcamp </a>
-			</footer>
-		</div>	
-		</body>
-	</html>
+<html lang="de">
+	<head>
+		<title> Normannator | Website </title>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=divice-width, initial-scale=1" />
+		
+		<style type="text/css">
+            <!--
+            @import "website_style.css";
+            -->
+		</style>
+	</head>
+    
+	<body>
+        <header>
+            <div id="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="home">
+            <h1>Normannator</h1>
+            <h2>Composer &amp; Guitarist</h2>
+            <a href="#about">
+                <img src="img/pfeil.png" alt="Pfeil">
+            </a>
+        </section>
+        
+        <section id="#about">
+            <h3>About</h3>
+            <hr>
+            <img src="img/avatar" alt="Avatar">
+            <h4>Norman Schmidt</h4>
+            <p>
+                Hier könnte der Text stehen, der dann auch als Beschreibung meiner Persönlichkeit dient.
+                Hier könnte der Text stehen, der dann auch als Beschreibung meiner Persönlichkeit dient.
+                Hier könnte der Text stehen, der dann auch als Beschreibung meiner Persönlichkeit dient.
+            </p>
+        </section>
+        
+        <section id="work">
+            <h3>Work</h3>
+            <hr>
+            <div id="projects">
+                <ul>
+                    <li><a href="#"><img src="img/project_01" alt="Projekt 01"></a></li>
+                    <li><a href="#"><img src="img/project_02" alt="Projekt 02"></a></li>
+                    <li><a href="#"><img src="img/project_03" alt="Projekt 03"></a></li>
+                    <li><a href="#"><img src="img/project_04" alt="Projekt 04"></a></li>
+                    <li><a href="#"><img src="img/project_05" alt="Projekt 05"></a></li>
+                    <li><a href="#"><img src="img/project_06" alt="Projekt 06"></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h3>Contact</h3>
+            <hr>
+            <form>
+                <input type="email" tabindex="1" placeholder="E-Mail"><br>
+                <input type="text" tabindex="2" placeholder="Betreff"><br>
+                <textarea tabindex="3" placeholder="Nachricht"></textarea><br>
+                <input class="button" type="submit">
+            </form>
+        </section>
+        
+        <footer>
+            <p>
+                &copy; 2016-2020 Normannator
+            </p>
+        </footer>
+	</body>
+</html>
