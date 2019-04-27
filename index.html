@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="de">
 	<head>
+        <meta charset="utf-8">
 		<title> Normannator | Website </title>
-		<meta charset="utf-8">
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=divice-width, initial-scale=1" />
+		<meta name="viewport" content="width=divice-width, initial-scale=1" /> <!-- Resp -->
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
 		<!-- CSS Datei -->
 		<style type="text/css">
             <!--
-            @import "website_style.css";
+            @import "css/website_style.css";
             -->
 		</style>
         
@@ -28,11 +31,12 @@
             </div>
             
             <nav id="main-nav">
+                <i class="fas fa-bars"></i>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#work"><li>Work</li></a>
+                    <a href="#contact"><li>Contact</li></a>
                 </ul>
             </nav>
         </header>
@@ -66,12 +70,12 @@
             <hr>
             <div id="projects">
                 <ul>
-                    <li><a href="#"><img src="http://placehold.it/280x170" alt="Projekt 01"></a></li>
-                    <li><a href="#"><img src="http://placehold.it/280x170" alt="Projekt 02"></a></li>
-                    <li><a href="#"><img src="http://placehold.it/280x170" alt="Projekt 03"></a></li>
-                    <li><a href="#"><img src="http://placehold.it/280x170" alt="Projekt 04"></a></li>
-                    <li><a href="#"><img src="http://placehold.it/280x170" alt="Projekt 05"></a></li>
-                    <li><a href="#"><img src="http://placehold.it/280x170" alt="Projekt 06"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/1280x720" alt="Projekt 01"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/1280x720" alt="Projekt 02"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/1280x720" alt="Projekt 03"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/1280x720" alt="Projekt 04"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/1280x720" alt="Projekt 05"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/1280x720" alt="Projekt 06"></a></li>
                 </ul>
             </div>
         </section>
@@ -94,5 +98,9 @@
                 &copy; 2016-2020 Normannator
             </p>
         </footer>
+        
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="js/mobile-menu.js"></script>
 	</body>
 </html>

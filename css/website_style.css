@@ -51,11 +51,15 @@ hr {
 }
 
 /* Animationen */
-#logo, li, img {
+#logo, li, img, .button, .fa-bars {
     transition: all 300ms;
     -moz-transition: all 300ms;
     -webkit-transition: all 300ms;
     -o-transition: all 300ms;
+}
+
+.fa-bars {
+    display: none;
 }
 
 /* ----------------------------------------------- */
@@ -93,7 +97,7 @@ header nav {
 
 header nav ul li {
     float: left;
-    margin-right: 25px;
+    margin-left: 25px;
 }
 
 header nav ul li a {
@@ -108,7 +112,7 @@ header nav ul li:hover {
 /* -------------------- HOME --------------------- */
 /* ----------------------------------------------- */
 #home {
-    background: url(img/landing.jpg);
+    background: url(../img/landing.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -256,4 +260,147 @@ footer p {
     font-size: 12px;
     color: #f0f0f0;
     padding-top: 30px;
+}
+
+/* ----------------------------------------------- */
+/* ---------------- MEDIA QUERIES ---------------- */
+/* ----------------------------------------------- */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    header {
+        height: auto;
+    }
+    
+    #logo {
+        width: 100px;
+        margin-top: 5px;
+    }
+    
+    header nav {
+        margin-top: 0;
+    }
+    
+    header nav ul li {
+        font-size: 12px;
+    }
+    
+    #home h1 {
+        font-size: 90px;
+        margin-top: 200px;
+    }
+    
+    #home h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        padding-top: 12%;
+        /* margin: 0; */
+    }
+    
+    #about p {
+        width: 80%
+    }
+    
+    #projects {
+        width: auto;
+    }
+    
+    #projects ul li {
+        width: 100%;
+        float: none;
+    }
+    
+    #projects ul li:last-child {
+        padding-bottom: 20%
+    }
+    
+    #projects img {
+        width: 55%;
+        height: auto;
+    }
+    
+    form input, form textarea {
+        width: 60%;
+    }
+    
+    .button {
+        width: 62%;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    #logo {
+        width: 90px;
+        margin-left: 30px;
+    }
+    
+    header nav {
+        margin: 0;
+        float: none;
+    }
+    
+    .fa-bars {
+        font-size: 17px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        margin: -25px 30px 0 0;
+    }
+    
+    .fa-bars:hover {
+        opacity: 0.5;
+    }
+    
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    header nav ul.open {
+        height: auto;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        font-size: 11px;
+        border-top: 1px solid #dddddd;
+    }
+    
+    header nav ul li:hover {
+        background-color: #eeeeee;
+    }
+    
+    #home h1 {
+        font-size: 50px;
+        margin-top: 200px;
+    }
+    
+    #home h2 {
+        width: 70%;
+        height: auto;
+    }
+    
+    #projects img {
+        width: 70%;
+        height: auto;
+    }
+    
+    form input, form textarea {
+        width: 70%;
+    }
+    
+    .button {
+        width: 72%
+    }
 }
