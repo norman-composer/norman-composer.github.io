@@ -77,7 +77,7 @@ header {
 }
 
 #logo {
-    width: 140px;
+    width: 250px;
     float: left;
     margin: 10px 0 0 50px;
 }
@@ -86,8 +86,9 @@ header {
     opacity: 0.5;
 }
 
-#logo img {
+#logo a h1 {
     width: 100%;
+    font-size: 25px;
 }
 
 header nav {
@@ -161,12 +162,45 @@ header nav ul li:hover {
     margin: 0 auto 0 auto;
 }
 
+#about li {
+    margin-bottom: 12px;
+}
+
+
+/* ----------------------------------------------- */
+/* ------------------- LISTEN -------------------- */
+/* ----------------------------------------------- */
+#listen {
+    background-color: #f0f0f0;
+}
+
+#listen img {
+    width: 240px;
+}
+
+#listen img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#listen h4 {
+    font-size: 25px;
+}
+
+#listen p {
+    width: 700px;
+    margin: 0 auto 0 auto;
+}
+
+#album iframe {
+    /*margin-left: 110px;*/
+}
+
 /* ----------------------------------------------- */
 /* -------------------- WORK --------------------- */
 /* ----------------------------------------------- */
-#work {
-    background-color: #f0f0f0;
-}
 
 #projects {
     width: 900px;
@@ -200,6 +234,10 @@ header nav ul li:hover {
 /* ----------------------------------------------- */
 /* ------------------- CONTACT ------------------- */
 /* ----------------------------------------------- */
+#contact {
+    background-color: #f0f0f0;
+}
+
 form input, textarea {
     font-family: 'Roboto Slab', serif;
     font-size: 15px;
@@ -273,8 +311,12 @@ footer p {
     }
     
     #logo {
-        width: 100px;
+        width: 140px;
         margin-top: 5px;
+    }
+    
+    #logo a h1 {
+        font-size: 15px;
     }
     
     header nav {
@@ -298,9 +340,13 @@ footer p {
         padding-top: 12%;
         /* margin: 0; */
     }
-    
+
     #about p {
         width: 80%
+    }
+    
+    #album iframe {
+        margin-left: 0px;
     }
     
     #projects {
@@ -334,8 +380,12 @@ footer p {
 /* Mobile */
 @media screen and (max-width: 480px) {
     #logo {
-        width: 90px;
+        width: 100px;
         margin-left: 30px;
+    }
+    
+    #logo a h1 {
+        font-size: 11px;
     }
     
     header nav {
@@ -389,6 +439,14 @@ footer p {
     #home h2 {
         width: 70%;
         height: auto;
+    }
+    
+    #album iframe {
+        margin-left: 0px;
+    }
+    
+    #listen iframe {
+        width: 85%;
     }
     
     #projects img {
