@@ -1,0 +1,90 @@
+/* Format der Druckausgabe */
+@page {
+	size: 21cm 29.7cm;
+	margin-top: 2cm;
+	margin-bottom: 3cm;
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+
+/* Allgemeine Style Definitionen (für Screen und Print) */
+/*table, th, td {
+	border: 1px solid;
+}
+
+table {
+	table-layout: auto;
+	border-collapse: collapse;
+
+}
+
+td {
+	text-align: center;
+}
+
+th {
+	text-align: center;
+}
+
+a:link {color: blue} 
+a:visited {color: purple} 
+a:focus {}
+a:hover {}
+a:active {color: red; font-wight: bold} 
+*/
+/*
+ * Gerät spezifische Definition
+ */
+ 
+/* Style Definitionen für Screen */
+/*
+@media screen {
+	p, td, tr, h1, h2, h3, h4, h5, h6, h7 {
+		font-family: "times", serif;
+	}
+}
+*/
+
+/* Style Definitionen für Print */
+
+
+
+/* Webseite im Bau Design */
+body {
+	background-color: #f0f0f2;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div#wartung {
+	width: 600px;
+	margin: 5em auto;
+	padding: 50px;
+	background-color: #fff;
+	border-radius: 1em;
+}
+
+a:link, a:visited {
+	color: #38488f;
+	text-decoration: none;
+}
+
+@media print {
+	div {
+		font-family: "arial", times, serif;
+	}
+}
+
+@media (max-width: 700px) {
+	body {
+		background-color: #fff;
+	}
+	
+	div#wartung {
+		width: auto;
+		margin: 0 auto;
+		border-radius: 0;
+		padding: 1em;
+	}
+}
