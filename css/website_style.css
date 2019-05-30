@@ -305,7 +305,7 @@ footer p {
 /* ----------------------------------------------- */
 
 /* Tablets */
-@media screen and (max-width: 1024px) {
+@media screen and max-width: 1024px {
     header {
         height: auto;
     }
@@ -378,7 +378,7 @@ footer p {
 
 
 /* Mobile */
-@media screen and (max-width: 480px) {
+@media screen and max-width: 480px {
     #logo {
         width: 100px;
         margin-left: 30px;
