@@ -153,6 +153,10 @@ header nav ul li:hover {
     -o-transform: scale(1.1);
 }
 
+#disco ul {
+	padding-inline-start: 0px;
+}
+
 #about h4 {
     font-size: 25px;
 }
@@ -203,7 +207,7 @@ header nav ul li:hover {
 /* ----------------------------------------------- */
 
 #projects {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto 0 auto;
 }
 
@@ -218,10 +222,18 @@ header nav ul li:hover {
 }
 
 #projects img {
+    width: 305px;
+    height: 185px;
+    border-radius: 5px;
+}
+
+/* Old
+#projects img {
     width: 280px;
     height: 170px;
     border-radius: 5px;
 }
+*/
 
 #projects img:hover {
     transform: scale(1.1);
@@ -304,103 +316,57 @@ footer p {
 /* ---------------- MEDIA QUERIES ---------------- */
 /* ----------------------------------------------- */
 
-/* Tablets */
-@media screen and max-width: 1024px {
-    header {
-        height: auto;
-    }
-    
-    #logo {
-        width: 140px;
-        margin-top: 5px;
-    }
-    
-    #logo a h1 {
-        font-size: 15px;
-    }
-    
-    header nav {
-        margin-top: 0;
-    }
-    
-    header nav ul li {
-        font-size: 12px;
-    }
-    
-    #home h1 {
-        font-size: 90px;
-        margin-top: 200px;
-    }
-    
-    #home h2 {
-        font-size: 22px;
-    }
-    
-    h3 {
-        padding-top: 12%;
-        /* margin: 0; */
-    }
-
-    #about p {
-        width: 80%
-    }
-    
-    #album iframe {
-        margin-left: 0px;
-    }
-    
-    #projects {
-        width: auto;
-    }
-    
-    #projects ul li {
-        width: 100%;
-        float: none;
-    }
-    
-    #projects ul li:last-child {
-        padding-bottom: 20%
-    }
-    
-    #projects img {
-        width: 55%;
-        height: auto;
-    }
-    
-    form input, form textarea {
-        width: 60%;
-    }
-    
-    .button {
-        width: 62%;
-    }
-}
-
-
-/* Mobile */
-@media screen and max-width: 480px {
-    #logo {
+/* Mobiles in Portrait mode */
+@media only screen and (max-width : 320px) {
+	
+	h3 {
+		font-size: 25px;
+	}
+	
+	h4, #about h4, #listen h4 {
+		font-size: 20px;
+	}
+	
+	#home {
+		background-size: fixed;
+	}
+		
+	#logo {
         width: 100px;
         margin-left: 30px;
     }
     
     #logo a h1 {
-        font-size: 11px;
+        font-size: 10px;
     }
-    
+	
+	#about p {
+		width: 80%;
+		font-size: 12px;
+	}
+	
+	#disco ul li{
+		font-size: 13px;
+	}
+	
+	header {
+		margin-top: 0px;
+		height: 42px;
+	}
+	
     header nav {
         margin: 0;
         float: none;
     }
     
     .fa-bars {
-        font-size: 17px;
+        font-size: 14px;
         display: inline-block;
         width: 100%;
         cursor: pointer;
         text-align: right;
         float: right;
-        margin: -25px 30px 0 0;
+        margin: -20px 30px 0 0;
     }
     
     .fa-bars:hover {
@@ -411,8 +377,10 @@ footer p {
         height: 0;
         overflow: hidden;
         margin: 0;
+		margin-top: -10px;
         padding: 0;
         width: 100%;
+		background-color: #ffffff
     }
     
     header nav ul.open {
@@ -432,28 +400,58 @@ footer p {
     }
     
     #home h1 {
-        font-size: 50px;
+		/*width: 80%;*/
+        font-size: 27px;
         margin-top: 200px;
     }
     
     #home h2 {
-        width: 70%;
+        width: 80%;
         height: auto;
+		font-size: 16px;
     }
     
+	#home a img {
+		width: 26px;
+	}
+	
     #album iframe {
         margin-left: 0px;
     }
     
     #listen iframe {
-        width: 85%;
+		max-width: 100%;
+		size: 10px;
+		width: 100%; 
+		height: 100%; 
+    }
+	
+	#projects {
+        width: auto;
+    }
+    
+    #projects ul li {
+        width: 100%;
+        float: none;
+    }
+    
+    #projects ul li:last-child {
+        padding-bottom: 20%
     }
     
     #projects img {
-        width: 70%;
+        width: 80%;
         height: auto;
     }
     
+	#projects iframe {
+		max-width: 85%;
+		size: 10px;
+		width: 100%; 
+		height: 100%;
+		margin-bottom: 15px;
+	}
+	
     form input, form textarea {
         width: 70%;
     }
@@ -461,4 +459,618 @@ footer p {
     .button {
         width: 72%
     }
+	
+	#contact h4 {
+		font-size: 15px;
+	}
+	
+	#contact h4 a {
+		font-size: 13px;
+	}
+	
+	#social-icons a img {
+		width: 35px;
+		height: 35px;
+		padding-right: 5px;
+	}
+}
+
+/* Mobiles in landscape mode */
+@media only screen and (min-width : 321px) and (max-width : 480px) {
+ 
+	h3 {
+		font-size: 28px;
+	}
+	
+	h4, #about h4, #listen h4 {
+		font-size: 23px;
+	}
+	
+	#home {
+		background-size: fixed;
+	}
+		
+	#logo {
+        width: 100px;
+        margin-left: 30px;
+    }
+    
+    #logo a h1 {
+        font-size: 15px;
+		width: 140px;
+		margin-bottom: 12px
+    }
+	
+	#about p {
+		width: 80%;
+		font-size: 13px;
+	}
+	
+	#disco ul li{
+		font-size: 14px;
+	}
+	
+	header {
+		margin-top: 0px;
+		height: 45px;
+	}
+	
+    header nav {
+        margin: 0;
+        float: none;
+    }
+    
+    .fa-bars {
+        font-size: 17px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        margin: -30px 30px 0 0;
+    }
+    
+    .fa-bars:hover {
+        opacity: 0.5;
+    }
+    
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+		margin-top: -10px;
+        padding: 0;
+        width: 100%;
+		background-color: #ffffff
+    }
+    
+    header nav ul.open {
+        height: auto;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        font-size: 11px;
+        border-top: 1px solid #dddddd;
+    }
+    
+    header nav ul li:hover {
+        background-color: #eeeeee;
+    }
+    
+    #home h1 {
+		/*width: 80%;*/
+        font-size: 40px;
+        margin-top: 200px;
+    }
+    
+    #home h2 {
+        width: 80%;
+        height: auto;
+		font-size: 18px;
+    }
+    
+	#home a img {
+		width: 26px;
+	}
+	
+    #album iframe {
+        margin-left: 0px;
+    }
+    
+    #listen iframe {
+		max-width: 100%;
+		size: 10px;
+		width: 90%; 
+		height: 100%;
+		margin-left: 30px;
+		margin-right: 30px;
+    }
+	
+	#projects {
+        width: auto;
+    }
+    
+    #projects ul li {
+        width: 100%;
+        float: none;
+    }
+    
+    #projects ul li:last-child {
+        padding-bottom: 6%
+    }
+    
+    #projects img {
+        width: 80%;
+        height: auto;
+    }
+    
+	#projects iframe {	
+		max-width: 90%;
+		size: 10px;
+		width: 560px; 
+		height: 225px;
+		margin-bottom: 15px;
+	}
+	
+    form input, form textarea {
+        width: 70%;
+    }
+    
+    .button {
+        width: 72%
+    }
+	
+	#contact h4 {
+		font-size: 17px;
+	}
+	
+	#contact h4 a {
+		font-size: 15px;
+	}
+	
+	#social-icons a img {
+		width: 50px;
+		height: 50px;
+		padding-right: 5px;
+	}
+}
+
+/* All Devices in between Smartphone And Tablett Size */
+@media only screen and (min-width : 481px) and (max-width : 767px) {
+ 
+	h3 {
+		font-size: 28px;
+	}
+	
+	h4, #about h4, #listen h4 {
+		font-size: 23px;
+	}
+	
+	#home {
+		background-size: fixed;
+	}
+		
+	#logo {
+        width: 100px;
+        margin-left: 30px;
+		margin-bottom: -6px;
+    }
+    
+    #logo a h1 {
+        font-size: 15px;
+		width: 140px;
+		margin-bottom: 12px
+    }
+	
+	#about p {
+		width: 80%;
+		font-size: 13px;
+	}
+	
+	#disco ul li{
+		font-size: 14px;
+	}
+	
+	header {
+		margin-top: 0px;
+		height: 47px;
+	}
+	
+    header nav {
+        margin: 0;
+        float: none;
+    }
+    
+    .fa-bars {
+        font-size: 17px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        margin: -23px 30px 0 0;
+    }
+    
+    .fa-bars:hover {
+        opacity: 0.5;
+    }
+    
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+		margin-top: -10px;
+        padding: 0;
+        width: 100%;
+		background-color: #ffffff
+    }
+    
+    header nav ul.open {
+        height: auto;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        font-size: 11px;
+        border-top: 1px solid #dddddd;
+    }
+    
+    header nav ul li:hover {
+        background-color: #eeeeee;
+    }
+    
+    #home h1 {
+		/*width: 80%;*/
+        font-size: 38px;
+        margin-top: 200px;
+    }
+    
+    #home h2 {
+        width: 80%;
+        height: auto;
+		font-size: 22px;
+    }
+    
+	#home a img {
+		width: 26px;
+	}
+	
+    #album iframe {
+        margin-left: 0px;
+    }
+    
+    #listen iframe {
+		max-width: 100%;
+		size: 10px;
+		width: 95%; 
+		height: 100%;
+		margin-left: 30px;
+		margin-right: 30px;
+    }
+	
+	#projects {
+        width: auto;
+    }
+    
+    #projects ul li {
+        width: 100%;
+        float: none;
+    }
+    
+    #projects ul li:last-child {
+        padding-bottom: 8%
+    }
+    
+    #projects img {
+        width: 60%;
+        height: auto;
+    }
+    
+	#projects iframe {	
+		max-width: 70%;
+		min-height: 80%;
+		size: 10px;
+		width: 560px; 
+		height: 252px;
+		margin-bottom: 25px;
+		margin-left: 10px;
+	}
+	
+    form input, form textarea {
+        width: 70%;
+    }
+    
+    .button {
+        width: 72%
+    }
+	
+	#contact h4 {
+		font-size: 18px;
+	}
+	
+	#contact h4 a {
+		font-size: 15px;
+	}
+	
+	#social-icons a img {
+		width: 60px;
+		height: 60px;
+		padding-right: 9px;
+	}
+}
+
+
+/* Tablets */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+	h3 {
+		font-size: 35px;
+	}
+	
+	h4, #about h4, #listen h4 {
+		font-size: 28px;
+	}
+	
+	#home {
+		background-size: fixed;
+	}
+	
+    header {
+        height: 45px;
+    }
+    
+    #logo {
+        width: 140px;
+        margin-top: 5px;
+    }
+    
+    #logo a h1 {
+        font-size: 15px;
+    }
+    
+    header nav {
+        margin-top: 1px;
+    }
+    
+    header nav ul li {
+        font-size: 13px;
+    }
+    
+    #home h1 {
+        font-size: 90px;
+        margin-top: 200px;
+    }
+    
+    #home h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        padding-top: 12%;
+        /margin: 0; 
+    }
+
+	#about img {
+		width: 290px;
+	}
+
+    #about p {
+        width: 80%;
+		font-size: 16px;
+    }
+    
+    #album iframe {
+        margin-left: 0px;
+    }
+	
+	#album iframe:last-child {
+		margin-bottom: 20px;
+	}
+    
+    #projects {
+        width: auto;
+    }
+    
+    #projects ul li {
+        width: 90%;
+        float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+    }
+	
+	#listen iframe {
+		max-width: 100%;
+		size: 10px;
+		width: 95%; 
+		height: 100%;
+		margin-left: 30px;
+		margin-right: 30px;
+    }
+	
+	#album iframe {
+        align: middle;
+		max-width: 700px;
+    }
+    
+    #projects ul li:last-child {
+        padding-bottom: 5%
+    }
+    
+    #projects img {
+        width: 60%;
+        height: auto;
+    }
+    
+	#projects iframe {	
+		max-width: 70%;
+		min-height: 80%;
+		size: 10px;
+		width: 560px; 
+		height: 316px;
+		margin-bottom: 25px;
+		margin-left: 10px;
+	}
+	
+    form input, form textarea {
+        width: 60%;
+    }
+    
+    .button {
+        width: 62%;
+    }
+	
+	#contact h4 {
+		font-size: 22px;
+	}
+	
+	#contact h4 a {
+		font-size: 18px;
+	}
+	
+	#social-icons a img {
+		width: 70px;
+		height: 70px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+
+/* Desktops and laptops computers */
+@media only screen and (min-width : 1224px) {
+	header nav {
+		float: right;
+		margin: 20px 50px 0 0;
+	}
+	
+	header {
+		height: 71px;
+	}
+	
+	#about img {
+		width: 300px;
+	}
+
+    #listen iframe {
+		max-width: 67%;
+		size: 10px;
+		width: 95%; 
+		height: 100%;
+		margin-left: 30px;
+		margin-right: 30px;
+    }
+	
+	#album iframe {
+        align: middle;
+		max-width: 700px;
+    }
+	
+	#album iframe:last-child {
+		margin-bottom: 20px;
+	}
+	
+	#projects ul li:last-child {
+        padding-bottom: 10%
+    }
+	
+	#projects iframe {	
+		max-width: 70%;
+		min-height: 80%;
+		size: 10px;
+		width: 595px;
+		height: 339px;
+		margin-bottom: 44px;
+		margin-left: 10px;
+	}
+	
+	#contact {
+		min-height: 36%;
+	}
+    
+	#social-icons a img {
+		width: 50px;
+		height: 50px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	h3 {
+		padding-top: 4%;
+	}
+}
+
+
+
+/* Very large screen devices */
+@media only screen and (min-width : 1824px) {
+	header nav {
+		float: right;
+		margin: 20px 50px 0 0;
+	}
+	
+	header {
+		height: 71px;
+	}
+	
+	#about img {
+		width: 300px;
+	}
+
+    #listen iframe {
+		max-width: 40%;
+		size: 10px;
+		width: 95%; 
+		height: 100%;
+		margin-left: 30px;
+		margin-right: 30px;
+    }
+	
+	#album iframe {
+        align: middle;
+		max-width: 700px;
+    }
+	
+	#projects {
+		width: 1200px
+	}
+	
+	#projects img {
+        width: 95%;
+        height: auto;
+    }
+	
+	#projects ul li:last-child {
+        padding-bottom: 10%
+    }
+	
+	#projects iframe {	
+		max-width: 70%;
+		min-height: 80%;
+		size: 10px;
+		width: 595px;
+		height: 339px;
+		margin-bottom: 44px;
+		margin-left: 10px;
+	}
+	
+	#contact {
+		min-height: 29%;
+	}
+	
+	h3 {
+		padding-top: 2%;
+	}
+    
+	#social-icons a img {
+		width: 50px;
+		height: 50px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 }
