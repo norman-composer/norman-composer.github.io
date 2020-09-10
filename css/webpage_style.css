@@ -113,6 +113,10 @@ header nav ul li {
     margin-left: 25px;
 }
 
+#page_heading {
+    text-decoration-line: underline;
+}
+
 header nav ul li a {
     font-size: 16px;
 }
@@ -124,8 +128,50 @@ header nav ul li:hover {
 /* ----------------------------------------------- */
 /* ------------------- LISTEN -------------------- */
 /* ----------------------------------------------- */
-#listen {
-    background-color: #f0f0f0;
+#releases {
+    background-color: #ffffff;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.job {
+    height: 500px;
+    background-color: darkgrey;
+}
+
+.job h2 {
+    /*text-align: left;*/
+    font-size: 22px;
+    left: 0px;
+    top: 8px;
+    position: relative;
+    color: black;
+}
+
+.job img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 0%;
+    top: -120px;
+}
+
+.job iframe {
+    position: relative;
+    height: 420px;
+    margin-left: 20px;
+}
+
+.job p {
+    font-size: 10px;
+    position: relative;
+    top: -130px;
+    left: 68px;
+    width: 280px;
+    text-align: justify;
+    color: black;
 }
 
 #listen img {
